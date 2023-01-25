@@ -36,7 +36,7 @@ public class LoginSteps {
     @Then("Page tittle harusnya {string}")
     public void page_tittle_harusnya(String title) throws InterruptedException {
         if (driver.getPageSource().contains("Login was unsuccessful.")){
-            driver.quit();
+            //driver.quit();
             driver.close();
             Assert.assertTrue(false);
         } else {
@@ -56,7 +56,7 @@ public class LoginSteps {
     */
     @Then("close browser")
     public void close_browser() {
-        driver.quit();
+        //driver.quit();
         driver.close();
     }
 }
